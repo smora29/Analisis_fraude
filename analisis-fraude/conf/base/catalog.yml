@@ -1,0 +1,19 @@
+
+
+# Rutas de los datos  C:/Users/sergi/Documents/Pruebas Técnicas/Nequi DS/Analisis_fraude/analisis-fraude/data/01_raw/datos_aleatorios_10k.xlsx
+raw_transactions:
+  type: pandas.ExcelDataSet
+  filepath: C:/Users/sergi/Documents/Pruebas Técnicas/Nequi DS/Analisis_fraude/analisis-fraude/data/01_raw/datos_aleatorios_10k.xlsx
+  sheet_name: Sheet1
+
+clean_transactions:
+  type: pandas.ParquetDataSet
+  filepath: C:/Users/sergi/Documents/Pruebas Técnicas/Nequi DS/Analisis_fraude/analisis-fraude/data/02_intermediate/clean_transactions.parquet
+
+engineered_features:
+  type: pandas.ParquetDataSet
+  filepath: C:/Users/sergi/Documents/Pruebas Técnicas/Nequi DS/Analisis_fraude/analisis-fraude/data/02_intermediate/engineered_features.parquet
+
+normalized_features:
+  type: pandas.ParquetDataSet
+  filepath: C:/Users/sergi/Documents/Pruebas Técnicas/Nequi DS/Analisis_fraude/analisis-fraude/data/03_primary/normalized_features.parquet

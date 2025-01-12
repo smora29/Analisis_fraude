@@ -1,0 +1,17 @@
+# This is a boilerplate parameters config generated for pipeline 'models'
+# using Kedro 0.19.10.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.10/configuration/parameters.html
+
+isolation_forest_params:
+  n_estimators: 150
+  contamination: 0.05
+  random_state: 42
+
+model_features:
+  - transaction_amount
+  - time_diff
+
+result_path: data/07_model_output/anomaly_detection_results.csv
+model_path: data/06_models/isolation_forest_model.pkl
